@@ -20,6 +20,8 @@ def view_passwords():
                     print("User:", user, "Password:", password)
                 except ValueError:
                     print("Error: Corrupted line found in passwords file.")
+    else:
+        print("No passwords saved yet.")
 
 
 # Request and add new password to list
