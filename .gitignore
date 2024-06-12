@@ -1,2 +1,5 @@
 # Ignore all personal mac specific files
 **/.DS_Store
+
+# Ignore passwords saved
+passwords.txt
