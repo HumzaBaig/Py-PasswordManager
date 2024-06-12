@@ -9,7 +9,7 @@ def get_master_password():
 
 # Display list of current passwords
 def view_passwords():
-    if os.path.exists("password.txt"):
+    if os.path.exists("passwords.txt"):
         with open('passwords.txt', 'r') as f:
             for line in f.readlines():
                 try:
@@ -44,9 +44,9 @@ def main():
             break
 
         if mode == "view":
-            view()
+            view_passwords()
         elif mode == "add":
-            add()
+            add_passwords()
         else:
             print("Invalid mode, please try again.")
 
